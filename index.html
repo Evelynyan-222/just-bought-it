@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JUST BOUGHT IT — A moment before you own it.</title>
+<meta name="description" content="Try the feeling of buying, without spending. A shopping simulation and a moment to reflect.">
+<link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
+</head>
+<body>
+<div class="announcement">ALL THE FEELING. NONE OF THE SPENDING. <span>A shopping simulation</span></div>
+<header><a class="brand" href="index.html">JUST BOUGHT IT<span>®</span></a><span class="header-note">A little pause in a world of more.</span><nav class="header-actions" aria-label="Shopping"><button class="text-button" id="cart-button">Cart <span id="cart-count">(0)</span></button><button class="text-button" id="saved-button">Saved <span id="saved-count">(0)</span></button></nav></header>
+<main>
+<div class="breadcrumb">THE EVERYDAY EDIT <span>/</span> OBJECT NO. 001</div>
+<section id="shop" class="product-layout">
+<div class="product-image"><span class="image-label">THE EVERYDAY EDIT — 001</span>
+<svg viewBox="0 0 600 620" role="img" aria-label="Illustration of a charcoal utility jacket with a collar and two large pockets">
+<defs><linearGradient id="fabric" x1="0" x2="1"><stop stop-color="#363735"/><stop offset=".5" stop-color="#555651"/><stop offset="1" stop-color="#343532"/></linearGradient><filter id="shadow"><feDropShadow dx="0" dy="15" stdDeviation="12" flood-opacity=".16"/></filter></defs>
+<ellipse cx="300" cy="535" rx="180" ry="18" fill="#d9d8d1" opacity=".5"/>
+<g filter="url(#shadow)" stroke="#292b28" stroke-linejoin="round"><path d="M233 113 L190 130 L136 157 L75 423 L143 442 L192 280 L183 512 Q300 526 417 512 L408 280 L457 442 L525 423 L464 157 L410 130 L367 113 Z" fill="url(#fabric)" stroke-width="3"/>
+<path d="M263 96 L337 96 L368 113 L328 177 L300 143 L272 177 L232 113 Z" fill="#444640" stroke-width="3"/><path d="M263 96 L300 143 L337 96" fill="#282b27"/>
+<path d="M300 145 L300 516 M310 162 L310 513" fill="none" stroke="#74756d"/>
+<path d="M207 324 H277 V407 Q245 423 207 407 Z M325 324 H395 V407 Q357 423 325 407 Z" fill="#454741" stroke-width="2"/>
+<path d="M207 333 H277 M325 333 H395 M190 157 L192 280 M410 157 L408 280 M82 399 L150 418 M450 418 L518 399 M185 495 Q300 510 415 495" fill="none" stroke="#77796e" stroke-opacity=".5"/>
+<g fill="#a3a398" stroke="none"><circle cx="301" cy="204" r="3"/><circle cx="301" cy="267" r="3"/><circle cx="301" cy="330" r="3"/><circle cx="301" cy="393" r="3"/><circle cx="301" cy="456" r="3"/></g></g></svg>
+<div class="image-bottom"><span>01 / 01</span><span>Considered essentials.</span><span>↗</span></div></div>
+<div class="product-details"><div class="eyebrow">A GOOD ADDITION. OR JUST A GOOD FEELING?</div><h1>The Everyday<br>Utility Jacket</h1><div class="price">$129.00 <span>Simulated price · you pay $0</span></div><p class="description">Easy layers. Clean lines. The kind of jacket you can already picture in your wardrobe. But is it the jacket you want, or the feeling of buying it?</p><div class="color"><span class="swatch"></span> Charcoal <span class="muted">/ One considered choice</span></div><button id="buy" class="primary">Buy <span>↗</span></button><button id="add-to-cart" class="secondary">Add to Cart <span>+</span></button><p class="simulation-note">No payment. No order. Just a moment to see how it feels.</p><div class="detail-row"><span>THE PIECE</span><p>Relaxed fit. Structured cotton. Everyday versatility.<br>A fictional product for a real moment of reflection.</p></div><div class="detail-row"><span>THE EXPERIENCE</span><p>Try the purchase. Check in with yourself.<br>Decide what happens next.</p></div></div>
+</section>
+<section id="flow" class="flow" hidden aria-labelledby="flow-title"><div class="flow-top"><span id="step-label" class="eyebrow"></span><button id="restart" class="text-button">Back to item ↗</button></div><div id="flow-content"></div></section>
+<section class="concept"><span class="eyebrow">A DIFFERENT KIND OF CHECKOUT</span><h2>Try the feeling.<br>Then find your answer.</h2><p>Sometimes we want the thing. Sometimes we want the moment. This is a small space to explore the difference—with no right answer and nothing to spend.</p></section>
+</main><footer><span>JUST BOUGHT IT</span><span>A computational thinking project · Made for reflection.</span><span>SIMULATION ONLY</span></footer>
+<dialog id="saved-dialog"><div class="dialog-top"><h2>Saved for later</h2><button id="close-saved" class="text-button">Close ×</button></div><p id="saved-message"></p><button id="revisit" class="primary" hidden>Revisit the jacket ↗</button><p class="simulation-note">Saved only in this browser when storage is available.</p></dialog>
+<dialog id="cart-dialog" aria-labelledby="cart-title"><div class="dialog-top"><h2 id="cart-title">Your cart</h2><button id="close-cart" class="text-button">Close ×</button></div><p id="cart-empty">Your cart is empty. Add the jacket when you’re ready.</p><div id="cart-item" hidden><div class="receipt"><span>The Everyday Utility Jacket<small>Charcoal · Quantity 1</small></span><span>$129.00<small>Simulated price</small></span></div><button id="remove-cart" class="text-button">Remove item</button><div class="receipt"><span>Simulated total</span><strong>$129.00</strong></div><p>Amount you pay: <strong>$0.00</strong></p></div><p class="simulation-note">Simulation only. No payment, real order, or delivery.</p><button id="checkout" class="primary" disabled>Checkout <span>→</span></button><button id="continue-shopping" class="text-button">Continue shopping</button></dialog>
+</body></html>
